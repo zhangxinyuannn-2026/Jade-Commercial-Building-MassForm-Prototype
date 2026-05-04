@@ -1,0 +1,23 @@
+.sun-chart { display:flex; align-items:flex-end; gap:3px; height:80px; }
+.sun-bar-col { display:flex; flex-direction:column; align-items:center; flex:1; }
+.sun-bar-wrap { height:64px; display:flex; align-items:flex-end; width:100%; }
+.sun-bar { width:100%; background:var(--gold); opacity:0.75; border-radius:2px 2px 0 0; min-height:4px; transition:height 0.3s; }
+.sun-bar-label { font-size:8px; color:var(--ink-ghost); margin-top:2px; font-family:var(--font-mono); }
+.facing-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; }
+.facing-card { border:1px solid var(--border); border-radius:var(--r-md); padding:10px 6px; text-align:center; cursor:pointer; transition:all 0.15s; background:var(--bg-white); display:flex; flex-direction:column; align-items:center; gap:3px; box-shadow:0 1px 3px rgba(44,74,53,0.04); }
+.facing-card:hover { border-color:var(--border-mid); box-shadow:0 2px 8px rgba(44,74,53,0.08); }
+.facing-card.active { border-color:var(--gold); background:var(--gold-light); }
+.facing-dir { font-size:14px; font-weight:700; font-family:var(--font-mono); color:var(--ink); }
+.esg-badge { font-size:11px; font-family:var(--font-mono); font-weight:600; padding:3px 8px; border-radius:20px; flex-shrink:0; }
+.facing-esg { font-size:10px; font-family:var(--font-mono); font-weight:600; }
+.esg-Ap,.esg-A,.esg-Bp { color:var(--accent); }
+.esg-B,.esg-Bm { color:var(--ink-light); }
+.esg-C { color:var(--ink-ghost); }
+.esg-Ap.esg-badge { background:var(--accent-light); color:var(--accent); }
+.esg-A.esg-badge  { background:var(--accent-light); color:var(--accent); }
+.esg-Bp.esg-badge { background:var(--blue-light); color:var(--blue-accent); }
+.esg-B.esg-badge,.esg-Bm.esg-badge { background:var(--bg-panel); color:var(--ink-light); }
+.esg-C.esg-badge  { background:var(--bg-deep); color:var(--ink-dim); }
+.massing-rec { display:flex; align-items:center; gap:12px; padding:11px 13px; border:1px solid var(--border); border-radius:var(--r-md); cursor:pointer; transition:all 0.15s; background:var(--bg-white); box-shadow:0 1px 3px rgba(44,74,53,0.04); }
+.massing-rec:hover { border-color:var(--border-mid); box-shadow:0 2px 8px rgba(44,74,53,0.08); }
+.massing-rec.active { border-color:var(--gold); background:var(--gold-light); }
