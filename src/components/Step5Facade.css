@@ -1,7 +1,0 @@
-.canvas-facade-wrap { background:var(--bg-white); border:1px solid var(--border-mid); border-radius:var(--r-lg); overflow:hidden; aspect-ratio:1; width:100%; box-shadow:0 1px 4px rgba(44,74,53,0.06); }
-.face-tab { padding:5px 11px; border:1px solid var(--border-mid); border-radius:20px; background:var(--bg-white); color:var(--ink-mid); font-size:10px; font-family:var(--font-mono); transition:all 0.15s; }
-.face-tab:hover { border-color:var(--accent); color:var(--accent); }
-.face-tab.active { background:var(--accent); color:#fff; border-color:var(--accent); }
-.mat-opt { display:flex; justify-content:space-between; align-items:center; padding:7px 9px; border:1px solid var(--border); border-radius:var(--r-sm); cursor:pointer; margin-bottom:5px; background:var(--bg-white); transition:all 0.15s; color:var(--ink-mid); }
-.mat-opt:hover { border-color:var(--border-mid); color:var(--ink); }
-.mat-opt.active { border-color:var(--accent); background:var(--accent-light); color:var(--accent); }
