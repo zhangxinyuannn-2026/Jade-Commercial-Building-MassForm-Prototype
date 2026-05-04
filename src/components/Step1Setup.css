@@ -1,0 +1,78 @@
+.upload-zone {
+  border: 1.5px dashed var(--border-bright);
+  border-radius: var(--r-lg);
+  padding: 32px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 24px;
+  background: var(--bg-panel);
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.upload-zone:hover { border-color: var(--accent-bright); background: rgba(59,130,246,0.06); }
+.upload-zone.has-file { border-color: var(--gold); border-style: solid; background: var(--gold-dim); }
+.upload-zone.loading { border-color: var(--accent-bright); animation: pulse 1.5s ease infinite; }
+.upload-icon { color: var(--text-dim); }
+.upload-title { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+.upload-hint { font-size: 12px; color: var(--text-secondary); }
+
+.file-loaded { width: 100%; }
+.ai-processing, .ai-done {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.ai-done strong { color: var(--text-primary); }
+
+.divider-or {
+  text-align: center;
+  position: relative;
+  margin: 20px 0;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+}
+.divider-or::before, .divider-or::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 44%;
+  height: 1px;
+  background: var(--border);
+}
+.divider-or::before { left: 0; }
+.divider-or::after { right: 0; }
+
+input.ai-filled {
+  border-color: var(--gold);
+  background: var(--gold-dim);
+}
+
+.orient-grid {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.orient-btn {
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 6px 16px;
+  font-size: 13px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-mid);
+  transition: all 0.15s;
+}
+.orient-btn:hover { border-color: var(--border-bright); color: var(--text-primary); }
+.orient-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
